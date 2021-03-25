@@ -6,21 +6,26 @@ public class Quicksort{
     public static void main (String[] args){
         Generate g = new Generate();
         int[] toSort= g.generateRandomInput(10000);
-
-        quicksort(toSort, 0, toSort.length-1);
+        boolean deterministic = false;
+        quicksort(toSort, 0, toSort.length-1, deterministic);
         System.out.println(isSorted(toSort));
 
     }
 
-    public static void quicksort(int[] a, int lo, int hi){
+    public static void quicksort(int[] a, int lo, int hi, boolean deterministic){
         Random rand = new Random();
-
+        int r;
         if (hi>lo){
-            int r = rand.nextInt(hi - lo + 1 ) + lo;//this gives r between hi and lo
+            if (!deterministic){
+                r = rand.nextInt(hi - lo + 1 ) + lo;//this gives r between hi and lo
+            }
+            else{
+                r = (hi+lo)/2;
+            }
             //int r = (hi+lo)/2;
             int p = partition(a, lo, hi, r);
-            quicksort(a, lo, p-1);//We never have p = lo
-            quicksort(a, p+1, hi);
+            quicksort(a, lo, p-1, deterministic);//We never have p = lo
+            quicksort(a, p+1, hi, deterministic);
         }
     }
 
