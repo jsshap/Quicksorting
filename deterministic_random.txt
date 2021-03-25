@@ -1,4 +1,4 @@
-i*1000,comparisons
+elements*1000,comparisons
 1,10424
 2,23864
 3,43029

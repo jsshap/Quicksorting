@@ -5,10 +5,10 @@ public class Experimenting {
     
     public static void main(String[] args){
         
-        int[] compArr = new int[1001];
-        for (int i =1; i< 1001; i++){
+        int[] compArr = new int[20];
+        for (int i =1; i< compArr.length; i++){
             Generate g = new Generate();
-            int[] toSort = g.generateRandomInput(i*1000);
+            int[] toSort = g.generateMostlySortedInput(i*1000);
             Quicksort.quicksort(toSort, 0, toSort.length-1, true);
             int comparisons = Quicksort.comparisons;
             compArr[i]=comparisons;
