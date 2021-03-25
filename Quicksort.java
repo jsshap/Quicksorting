@@ -3,12 +3,15 @@ import java.util.Random;
 
 public class Quicksort{
 
+    static int comparisons=0;
     public static void main (String[] args){
         Generate g = new Generate();
-        int[] toSort= g.generateRandomInput(10000);
-        boolean deterministic = false;
+        int[] toSort= g.generateRandomInput(1000);
+        boolean deterministic = true;
         quicksort(toSort, 0, toSort.length-1, deterministic);
-        System.out.println(isSorted(toSort));
+        assert(isSorted(toSort));
+        System.out.println("Comparisons: " + comparisons);
+        comparisons=0;
 
     }
 
@@ -20,7 +23,7 @@ public class Quicksort{
                 r = rand.nextInt(hi - lo + 1 ) + lo;//this gives r between hi and lo
             }
             else{
-                r = (hi+lo)/2;
+                r = (hi);
             }
             //int r = (hi+lo)/2;
             int p = partition(a, lo, hi, r);
@@ -42,6 +45,9 @@ public class Quicksort{
         int x = a[hi];//x is the pivot value. this was a[r]
         //System.out.println("x="+x/1000);
         while (i<=j){
+            comparisons++;
+            //TODO: I think this is the only time we need to increment comparisons, but correct me if I'm wrong Marty
+
             if (a[i]<=x){//belongs to smalls
                 //System.out.println(a[i]/1000 + "is less than " + x/1000);
                 i++;
