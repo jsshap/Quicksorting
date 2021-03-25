@@ -5,20 +5,23 @@ public class Experimenting {
     
     public static void main(String[] args){
         
-        int[] compArr = new int[20];
+        int[] compArr = new int[75];
         for (int i =1; i< compArr.length; i++){
             Generate g = new Generate();
-            int[] toSort = g.generateMostlySortedInput(i*1000);
-            Quicksort.quicksort(toSort, 0, toSort.length-1, true);
+            for (int j=0; j<10; j++){
+                int[] toSort = g.generatePartiallySortedInput(i*1000);
+                Quicksort.quicksort(toSort, 0, toSort.length-1, true);
+            }
             int comparisons = Quicksort.comparisons;
-            compArr[i]=comparisons;
+            int comparisonsAverage=comparisons/10;
+            compArr[i]=comparisonsAverage;
             Quicksort.comparisons=0;
         }
 
 
 
         //Don't forget to redirect stout
-        System.out.println("elements*1000,comparisons");
+        System.out.println("elements*1000,avg comparisons");
         for (int i=1; i< compArr.length; i++){
             System.out.println(i + "," + compArr[i]);
         }

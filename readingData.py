@@ -2,22 +2,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-random_data = pd.read_csv("deterministic_random.txt")
-partial_data=pd.read_csv("deterministic_partial.txt")
-mostly_data=pd.read_csv("deterministic_mostly.txt")
+random_data = pd.read_csv("deterministic_random_average.csv")
+partial_data=pd.read_csv("deterministic_partial_average.csv")
+mostly_data=pd.read_csv("deterministic_mostly_average.csv")
 
 
 
 random_x = random_data['elements*1000']
-random_y= random_data['comparisons']
+random_y= random_data['avg comparisons']
 
 mostly_x=mostly_data['elements*1000']
-mostly_y=mostly_data['comparisons']
+mostly_y=mostly_data['avg comparisons']
 
 partial_x=partial_data['elements*1000']
-partial_y=partial_data['comparisons']
+partial_y=partial_data['avg comparisons']
 
-plt.plot(random_x[:int(len(random_x)/5)],random_y[:int(len(random_y)/5)], label = "Random Input")
+plt.plot(random_x,random_y, label = "Random Input")
 plt.plot(partial_x, partial_y, label= "Partially Sorted")
 plt.plot(mostly_x, mostly_y, label="Mostly Sorted")
 
