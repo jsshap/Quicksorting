@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = pd.read_csv('random_mostly_HistV2.csv', usecols=[5])
+data = pd.read_csv('Data/HistData/random_mostly_HistV2.csv', usecols=[3])
 
 data.plot(kind='density')
 plt.ylabel('Frequency')
@@ -12,4 +12,10 @@ ax=plt.gca()
 #ax.get_yaxis().get_major_formatter().set_scientific(False)
 #ax.get_xaxis().get_major_formatter().set_scientific(False)
 
-plt.show()
+#plt.show()
+
+import numpy as np
+
+#print(np.var(data))
+
+print(data)

@@ -1,0 +1,96 @@
+Variance for Deterministic Quicksort on Mostly Sorted Input
+
+Variance for 100 elements: 130769.85054627909
+Squared Coefficient of Variation for 100 elements:  0.01303643567383581
+Variance for 1000 elements: 161391543.03916717
+Squared Coefficient of Variation for 1000 elements:  0.0016668503570772088
+Variance for 5000 elements: 20742674787.972996
+Squared Coefficient of Variation for 5000 elements:  0.00034347513379177235
+Variance for 10000 elements: 197592321800.17465
+Squared Coefficient of Variation for 10000 elements:  0.00020419992176329475
+Variance for 15000 elements: 562762991653.3358
+Squared Coefficient of Variation for 15000 elements:  0.0001150757012428317
+Variance for 20000 elements: 1063026169216.6941
+Squared Coefficient of Variation for 20000 elements:  6.897009430050105e-05
+
+
+Variance for Deterministic Quicksort on Partially Sorted Input
+
+Variance for 100 elements: 150734.06761492474
+Squared Coefficient of Variation for 100 elements:  0.1756118087327486
+Variance for 1000 elements: 369688029.45660686
+Squared Coefficient of Variation for 1000 elements:  0.22807976538715805
+Variance for 5000 elements: 54984745475.14843
+Squared Coefficient of Variation for 5000 elements:  0.07954085729462214
+Variance for 10000 elements: 556675874733.568
+Squared Coefficient of Variation for 10000 elements:  0.04676846047185104
+Variance for 15000 elements: 1613476682269.1697
+Squared Coefficient of Variation for 15000 elements:  0.02936600164212354
+Variance for 20000 elements: 4119200836959.5
+Squared Coefficient of Variation for 20000 elements:  0.023912278494975982
+
+
+Variance for Deterministic Quicksort on Random Input
+
+Variance for 100 elements: 4799.66625438054
+Squared Coefficient of Variation for 100 elements:  0.011210881635947197
+Variance for 1000 elements: 385011.29334157903
+Squared Coefficient of Variation for 1000 elements:  0.003216618301938885
+Variance for 5000 elements: 8997730.293135434
+Squared Coefficient of Variation for 5000 elements:  0.001791084205223457
+Variance for 10000 elements: 37268330.06864564
+Squared Coefficient of Variation for 10000 elements:  0.0015175334824159706
+Variance for 15000 elements: 80807920.01319316
+Squared Coefficient of Variation for 15000 elements:  0.0013391758427889289
+Variance for 20000 elements: 151648130.42815915
+Squared Coefficient of Variation for 20000 elements:  0.0013057661600933983
+
+
+Variance for Random Quicksort on Random Input
+
+Variance for 100 elements: 2373.2481962481966
+Squared Coefficient of Variation for 100 elements:  0.005818464607473634
+Variance for 1000 elements: 568177.7466501752
+Squared Coefficient of Variation for 1000 elements:  0.004658657882200592
+Variance for 5000 elements: 10494624.542568546
+Squared Coefficient of Variation for 5000 elements:  0.0020644720681727703
+Variance for 10000 elements: 41449714.00329828
+Squared Coefficient of Variation for 10000 elements:  0.0016997017581037316
+Variance for 15000 elements: 88519975.38610594
+Squared Coefficient of Variation for 15000 elements:  0.001462984031222884
+Variance for 20000 elements: 128509316.98412699
+Squared Coefficient of Variation for 20000 elements:  0.0011296651138094549
+
+
+Variance for Random Quicksort on Partially Sorted Input
+
+Variance for 100 elements: 4059.3638425066993
+Squared Coefficient of Variation for 100 elements:  0.009869701851367952
+Variance for 1000 elements: 412118.90806019376
+Squared Coefficient of Variation for 1000 elements:  0.003344788633965978
+Variance for 5000 elements: 13081909.256854257
+Squared Coefficient of Variation for 5000 elements:  0.002646156182420461
+Variance for 10000 elements: 38123749.84683571
+Squared Coefficient of Variation for 10000 elements:  0.0015628490156282555
+Variance for 15000 elements: 64386257.38796123
+Squared Coefficient of Variation for 15000 elements:  0.0010647604172447749
+Variance for 20000 elements: 161534741.98144713
+Squared Coefficient of Variation for 20000 elements:  0.0014020957361924114
+
+
+Variance for Random Quicksort on Mostly Sorted Input
+
+Variance for 100 elements: 2786.7311894454756
+Squared Coefficient of Variation for 100 elements:  0.0066413525040189755
+Variance for 1000 elements: 333372.1096681097
+Squared Coefficient of Variation for 1000 elements:  0.002778073575306204
+Variance for 5000 elements: 12098180.950731808
+Squared Coefficient of Variation for 5000 elements:  0.0023871136346397355
+Variance for 10000 elements: 38961018.13626057
+Squared Coefficient of Variation for 10000 elements:  0.0016099863342008624
+Variance for 15000 elements: 92600635.29210472
+Squared Coefficient of Variation for 15000 elements:  0.0015254621149689048
+Variance for 20000 elements: 142690662.6019377
+Squared Coefficient of Variation for 20000 elements:  0.001239665774897154
+
+
