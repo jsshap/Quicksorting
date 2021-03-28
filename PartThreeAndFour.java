@@ -8,7 +8,7 @@ public class PartThreeAndFour {
             for (int j =0; j< 100; j++ ){
                 Generate g = new Generate();
                 int[] toSort= g.generateRandomInput(numElements);
-                boolean deterministic= false;
+                boolean deterministic= true;
                 Quicksort.quicksort(toSort, 0, toSort.length-1, deterministic);
                 int comparisonsLocal = Quicksort.comparisons;
                 Quicksort.comparisons =0;
