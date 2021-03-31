@@ -1,10 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import math
 
-random_data = pd.read_csv("deterministic_random_average.csv")
-partial_data=pd.read_csv("deterministic_partial_average.csv")
-mostly_data=pd.read_csv("deterministic_mostly_average.csv")
+random_data = pd.read_csv("Data/RuntimeData/deterministic_random_average.csv")
+partial_data=pd.read_csv("Data/RuntimeData/deterministic_partial_average.csv")
+mostly_data=pd.read_csv("Data/RuntimeData/deterministic_mostly_average.csv")
 
 
 
@@ -17,9 +18,15 @@ mostly_y=mostly_data['avg comparisons']
 partial_x=partial_data['elements*1000']
 partial_y=partial_data['avg comparisons']
 
+
+baseX=[i for i in range (1,200)]
+baseY=[(2*i*1000*math.log(i*1000)) for i in baseX]
+print(baseY)
+
 plt.plot(random_x,random_y, label = "Random Input")
 plt.plot(partial_x, partial_y, label= "Partially Sorted")
 plt.plot(mostly_x, mostly_y, label="Mostly Sorted")
+plt.plot(baseX,baseY, label="2nln(n)")
 
 plt.legend(loc="best")
 plt.title("Comparisons vs. Time for Deterministic Quicksort")
