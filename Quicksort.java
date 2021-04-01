@@ -22,15 +22,36 @@ public class Quicksort{
             if (!deterministic){
                 r = rand.nextInt(hi - lo + 1 ) + lo;//this gives r between hi and lo
             }
-            else{
-                r = (hi);
+            if (a.length<20){
+                r = a.length/2;
             }
+            else{
+                println("yup"); 
+                int mid = a.length/2;
+                int[] midValues = new int[10];
+                r = mid; 
+
+                for(int i=0;i<10; i++){
+                    midValues[i] = a[mid-5+i];
+                }
+                quicksort(midValues,0,9,false);
+
+                int bestValue = midValues[4];
+                for (int i=0;i<10; i++){   
+                    if(a[mid-5+i]==bestValue){
+                        r= mid-5+i;
+                        break;
+                        }
+                    }
+            }
+
             //int r = (hi+lo)/2;
             int p = partition(a, lo, hi, r);
             quicksort(a, lo, p-1, deterministic);//We never have p = lo
             quicksort(a, p+1, hi, deterministic);
+                }
         }
-    }
+    
 
     public static int partition(int[] a, int lo, int hi, int r){
         //System.out.println("line 38");

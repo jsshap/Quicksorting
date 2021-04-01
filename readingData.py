@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-random_data = pd.read_csv("ourTestRandom.csv")
-partial_data=pd.read_csv("ourTestPartial.csv")
-mostly_data=pd.read_csv("ourTestMostly.csv")
+random_data = pd.read_csv("ourTestRandomSortedV2.csv")
+partial_data=pd.read_csv("ourTestPartialSortedV2.csv")
+mostly_data=pd.read_csv("ourTestMostlySortedV2.csv")
 
 
 
