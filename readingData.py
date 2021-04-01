@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-random_data = pd.read_csv("Data/RuntimeData/deterministic_random_average.csv")
-partial_data=pd.read_csv("Data/RuntimeData/deterministic_partial_average.csv")
-mostly_data=pd.read_csv("Data/RuntimeData/deterministic_mostly_average.csv")
+random_data = pd.read_csv("ourTestRandom.csv")
+partial_data=pd.read_csv("ourTestPartial.csv")
+mostly_data=pd.read_csv("ourTestMostly.csv")
 
 
 
