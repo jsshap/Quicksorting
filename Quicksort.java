@@ -29,8 +29,8 @@ public class Quicksort{
             int p = partition(a, lo, hi, r);
             quicksort(a, lo, p-1, deterministic);//We never have p = lo
             quicksort(a, p+1, hi, deterministic);
-                }
         }
+    }
     
 
     public static int partition(int[] a, int lo, int hi, int r){
