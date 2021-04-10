@@ -4,16 +4,6 @@ import java.util.Random;
 public class Quicksort{
 
     static int comparisons=0;
-    public static void main (String[] args){
-        Generate g = new Generate();
-        int[] toSort= g.generateRandomInput(1000);
-        boolean deterministic = true;
-        quicksort(toSort, 0, toSort.length-1, deterministic);
-        assert(isSorted(toSort));
-        System.out.println("Comparisons: " + comparisons);
-        comparisons=0;
-
-    }
 
     public static void quicksort(int[] a, int lo, int hi, boolean deterministic){
         Random rand = new Random();
