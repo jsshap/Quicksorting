@@ -6,6 +6,9 @@ To graph runtime of the sorts, we used Experimenting.java. The main method of th
 
 PartThreeAndFour.java sorts 100 arrays of specified size and records the number of comparisons for each one. It prints to stout, which must be redirected to a csv.
 
+Finally, the code for our version of quick sort is created by changing the line "r=hi;" in Quicksorting.java to "r=(hi+lo)/2;."
+
 Running our code simply requires specifying the input type, number of sorts, and type of quick sort in the code, followed by executing java Experimenting or java PartThreeAndFour.
+
 
 We used the python files to manipulate the data and generate our graphs.
